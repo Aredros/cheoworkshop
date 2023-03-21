@@ -1,0 +1,357 @@
+//Color rules: 60% primary, 30% secondary, 10% Accent
+//Light Theme 1/ GreenRed Zodiac garden
+$ZodiacPrimary: #EDCC9F;
+$ZodiacSecondary: #211E0B;
+$ZodiacAccent: #BF8844;
+$ZodiacHeadline: #9A4738;
+
+//Dark Theme 1 / Violet Job
+$JobPrimary: #26101d;
+$JobSecondary: #723e5a;
+$JobAccent: #d2a19c;
+$JobHeadline: #627243;
+$JobBorder: #c49042;
+
+//Light Theme 2 / Cold Flowers
+$ColdFlowersPrimary: #522109;
+$ColdFlowersSecondary: #203B27;
+$ColdFlowersAccent: #D57C41;
+$ColdFlowersHeadline: #E39584;
+
+//Dark Theme 2 / Red Night
+$RedNightPrimary: #292824;
+$RedNightSecondary: #4b3e38;
+$RedNightAccent: #D23243;
+$RedNightHeadline: #A6A18D;
+
+//COLORING
+
+//ZODIAC colors
+$background--general--zodiac: white;
+$background--card-main--zodiac: $ZodiacPrimary;
+$background--card-mid--zodiac: darken($ZodiacPrimary, 15%);
+$background--card-small--zodiac: $ZodiacSecondary;
+$font-main--zodiac: $ZodiacHeadline; //use it as hover color too
+$font-secondary--zodiac: $ZodiacPrimary;
+$font-menu--zodiac: $ZodiacSecondary;
+$font-accent--zodiac: white;
+$button--zodiac: $ZodiacAccent;
+$button--hover--zodiac: $ZodiacHeadline;
+$button-2--zodiac: $ZodiacHeadline;
+$button-2--hover--zodiac: $ZodiacAccent;
+$icons--zodiac: $ZodiacAccent;
+$icons-2--zodiac: $ZodiacHeadline;
+$borders--zodiac: 4px solid rgba($ZodiacAccent , 0.8);
+$borders-2--zodiac: $ZodiacHeadline;
+
+//JOB colors
+$background--general--job: $JobPrimary;
+$background--card-main--job: $JobAccent;
+$background--card-mid--job: lighten($JobAccent, 15%);
+$background--card-small--job: $JobSecondary;
+$font-main--job: $JobSecondary;
+$font-secondary--job: $JobAccent;
+$font-accent--job: $JobHeadline;
+$button--job: $JobAccent;
+$button--hover--job: $JobHeadline;
+$button-2--job: $JobHeadline;
+$button-2--hover--job: $JobAccent;
+$icons--job: $JobAccent;
+$icons-2--job: $JobHeadline;
+$borders--job: 4px solid rgba($JobBorder , 0.8);
+$borders-2--job: $JobHeadline;
+
+//COLD FLOWERS colors
+$background--general--coldflowers: white;
+$background--card-main--coldflowers: $ColdFlowersPrimary;
+$background--card-mid--coldflowers: darken($ColdFlowersPrimary, 15%);
+$background--card-small--coldflowers: $ColdFlowersSecondary;
+$font-main--coldflowers: $ColdFlowersHeadline;
+$font-secondary--coldflowers: $ColdFlowersPrimary;
+$font-accent--coldflowers: white;
+$button--coldflowers: $ColdFlowersAccent;
+$button--hover--coldflowers: $ColdFlowersHeadline;
+$button-2--coldflowers: $ColdFlowersHeadline;
+$button-2--hover--coldflowers: $ColdFlowersAccent;
+$icons--coldflowers: $ColdFlowersAccent;
+$icons-2--coldflowers: $ColdFlowersHeadline;
+$borders--coldflowers: 4px solid rgba($ColdFlowersAccent , 0.8);
+$borders-2--coldflowers: $ColdFlowersHeadline;
+
+//RED NIGHT colors
+$background--general--rednight: $RedNightPrimary;
+$background--card-main--rednight: $RedNightHeadline;
+$background--card-mid--rednight: lighten($RedNightHeadline, 15%);
+$background--card-small--rednight: $RedNightSecondary;
+$font-main--rednight: $RedNightAccent;
+$font-secondary--rednight: $RedNightAccent;
+$font-accent--rednight: $RedNightSecondary;
+$button--rednight: $RedNightAccent;
+$button--hover--rednight: $RedNightHeadline;
+$button-2--rednight: $RedNightHeadline;
+$button-2--hover--rednight: $RedNightAccent;
+$icons--rednight: $RedNightAccent;
+$icons-2--rednight: $RedNightHeadline;
+$borders--rednight: 4px solid rgba($RedNightAccent , 0.8);
+$borders-2--rednight: $RedNightHeadline;
+
+//COLORING IN ACTION 
+///General background
+.background--general{
+    &--zodiac{
+        background: $background--general--zodiac;
+    }
+    &--job{
+        background: $background--general--job;
+    }
+    &--coldflowers{
+        background: $background--general--coldflowers;
+    }
+    &--rednight{
+        background: $background--general--rednight;
+    }
+}
+
+///Banner background
+.background--card-main{
+    &--zodiac{
+        background: $background--card-main--zodiac;
+        border: $borders--zodiac;
+    }
+    &--job{
+        background: $background--card-main--job;
+        border: $borders--job;
+    }
+    &--coldflowers{
+        background: $background--card-main--coldflowers;
+        border: $borders--coldflowers;
+    }
+    &--rednight{
+        background: $background--card-main--rednight;
+        border: $borders--rednight;
+    }
+}
+
+///Card mid background
+.background--card-mid{
+    &--zodiac{
+        background: $background--card-mid--zodiac;
+        //border: $borders--zodiac;
+        &:nth-child(even){
+            background: darken($background--card-mid--zodiac, 15%);
+        }
+    }
+    &--job{
+        background: $background--card-mid--job;
+        border: $borders--job;
+        &:nth-child(even){
+            background: lighten($background--card-mid--job, 25%);}
+    }
+    &--coldflowers{
+        background: $background--card-mid--coldflowers;
+        border: $borders--coldflowers;
+        &:nth-child(even){
+            background: darken($background--card-mid--coldflowers, 15%);
+        }
+    }
+    &--rednight{
+        background: $background--card-mid--rednight;
+        border: $borders--rednight;
+        &:nth-child(even){
+            background: lighten($background--card-mid--rednight, 25%);
+        }
+    }
+}
+
+///Card small background
+.background--card-small{
+    &--zodiac{
+        background: $background--card-small--zodiac;
+        &:nth-child(even){
+            background: darken($background--card-small--zodiac, 15%);
+        }
+    }
+    &--job{
+        background: $background--card-small--job;
+        &:nth-child(even){
+            background: lighten($background--card-small--job, 25%);
+        }
+    }
+    &--coldflowers{
+        background: $background--card-small--coldflowers;
+        &:nth-child(even){
+            background: darken($background--card-small--coldflowers, 15%);
+        }
+    }
+    &--rednight{
+        background: $background--card-small--rednight;
+        &:nth-child(even){
+            background: lighten($background--card-small--rednight, 25%);
+        }
+    }
+}
+
+///Card small background
+.background--card-specialities{
+    &--zodiac{
+        background: $background--card-small--zodiac;
+        &:nth-child(even){
+            background: darken($background--card-small--zodiac, 15%);
+        }
+    }
+    &--job{
+        background: $background--card-small--job;
+        &:nth-child(even){
+            background: lighten($background--card-small--job, 25%);
+        }
+    }
+    &--coldflowers{
+        background: $background--card-small--coldflowers;
+        &:nth-child(even){
+            background: darken($background--card-small--coldflowers, 15%);
+        }
+    }
+    &--rednight{
+        background: $background--card-small--rednight;
+        &:nth-child(even){
+            background: lighten($background--card-small--rednight, 25%);
+        }
+    }
+}
+
+//Overlay projects
+.overlay{
+    &--zodiac::after{
+        background: lighten(rgba($background--card-main--zodiac, 0.8), 25%);
+    }
+    &--job::after{
+        background: darken($background--card-main--job, 25%);
+    }
+    &--coldflowers::after{
+        background: lighten($background--card-main--coldflowers, 25%);
+    }
+    &--rednight::after{
+        background: darken($background--card-main--rednight, 25%);
+    }
+}
+
+///Font main
+/// use it as hover color too
+.font-main{
+    &--zodiac{
+        color: $font-main--zodiac;
+    }
+    &--job{
+        color: $font-main--job;
+    }
+    &--coldflowers{
+        color: $font-main--coldflowers;
+    }
+    &--rednight{
+        color: $font-main--rednight;
+    }
+}
+
+///Font secondary
+.font-secondary{
+    &--zodiac{
+        color: $font-secondary--zodiac;
+    }
+    &--job{
+        color: $font-secondary--job;
+    }
+    &--coldflowers{
+        color: $font-secondary--coldflowers;
+    }
+    &--rednight{
+        color: $font-secondary--rednight;
+    }
+}
+
+///Font menu
+.font-menu{
+    &--zodiac{
+        color: $font-menu--zodiac;
+    }
+    &--job{
+        color: $font-secondary--job;
+    }
+    &--coldflowers{
+        color: $font-secondary--coldflowers;
+    }
+    &--rednight{
+        color: darken($font-secondary--rednight, 5%);
+    }
+}
+
+///Font footer
+.font-footer{
+    &--zodiac{
+        h3{ color: $font-menu--zodiac;}
+        ul li a, p{  color: $font-menu--zodiac;}
+    }
+    &--job{
+        h3{ color: $font-secondary--job;}
+        ul li a, p{  color: $font-secondary--job;}
+    }
+    &--coldflowers{
+        h3{ color: $font-secondary--coldflowers;}
+        ul li a, p{  color: $font-secondary--coldflowers;}
+    }
+    &--rednight{
+        h3{ color: darken($font-secondary--rednight, 5%);}
+        ul li a, p{  color: darken($font-secondary--rednight, 5%);}
+    }
+}
+
+///Font accent
+.font-accent{
+    &--zodiac{
+        color: $font-accent--zodiac;
+    }
+    &--job{
+        color: black;
+    }
+    &--coldflowers{
+        color: $font-accent--coldflowers;
+    }
+    &--rednight{
+        color: lightgray;
+    }
+}
+
+///Button
+.button{
+    &--zodiac{
+        background: $button--zodiac;
+        color: $font-main--zodiac;
+        border: 2px solid black;
+        &:hover{
+            background: $button--hover--zodiac;
+        }
+    }
+    &--job{
+        background: $button--job;
+        color: $font-main--job;
+        border: 2px solid black;
+        &:hover{
+            background: $button--hover--job;
+        }
+    }
+    &--coldflowers{
+        background: $button--coldflowers;
+        color: $font-main--coldflowers;
+        border: 2px solid black;
+        &:hover{
+            background: $button--hover--coldflowers;
+        }
+    }
+    &--rednight{
+        background: $button-2--rednight;
+        color: $font-main--rednight;
+        border: 2px solid black;
+        &:hover{
+            background: $button--hover--rednight;
+        }
+    }
+}

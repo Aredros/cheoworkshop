@@ -1,0 +1,45 @@
+.blog-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: clamp(300px, 90%, 1200px);
+    margin: auto;
+    div{
+        flex-basis: 30%;
+        padding: 10px;
+        text-align: left;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px; 
+        p{
+            padding-left: 15px;
+            line-height: 1rem;
+        }
+        .title-blog{
+            font-size: 1.3rem;
+            line-height: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+/*--------------------------------------------------------------------------------------------------------*/
+/* --------------------------------- RESPONSIVE : TABLETTE ( 768px) ------------------------------------- */
+/*--------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px){
+    .blog-gallery{
+        flex-direction: row;
+    }
+
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* ----------------------------- RESPONSIVE : DESKTOP COMPUTER (992px ) ---------------------------------- */
+/*--------------------------------------------------------------------------------------------------------*/
+@media (min-width: 992px){
+
+}

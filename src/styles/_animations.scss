@@ -1,0 +1,59 @@
+/*
+INDEX:
+
+1. ANIMATION: DROPDOWN MENU
+
+*/
+
+
+
+/*********************************************************************************/
+/* ------------------- RESPONSIVE : ONLY TELEPHONE (  de 450px) ------------------- */
+/*********************************************************************************/
+
+@media (max-width: 767px)
+{
+
+//DROPDOWN MENU
+.navbar__collapsable__navigation{
+    justify-content: center;
+    width: 100%;   
+    margin: auto;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    li{
+        margin: 15px;
+    }
+}
+
+.visible-navbar{
+    display: inline-block;
+    .navbar__collapsable__navigation{
+    animation: dropdown-open 1s ease-out forwards;
+    -webkit-animation: dropdown-open 1s ease-out forwards;
+}   
+}
+
+@keyframes dropdown-open {
+    0% {
+        opacity: 0.5;
+        height: 2px;
+    }
+    100% {
+        opacity: 1;
+        height: 200px;
+    }
+  }
+
+.invisible-navbar{ 
+    display: none;
+    .navbar__collapsable__navigation{
+    height: 2px;
+    animation: dropdown-close 2s ease-out forwards;
+    -webkit-animation: dropdown-close 2s ease-out forwards;
+}   
+}
+}

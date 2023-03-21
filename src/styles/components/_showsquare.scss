@@ -1,0 +1,97 @@
+.show-square{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: clamp(300px, 95%, 1250px);
+    margin: auto;
+    &__container{
+        position: relative;
+        height: 200px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        overflow: hidden;
+        padding-right: 5px;
+        box-shadow: 7px 5px 6px #4e493d65;
+        img{
+            
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px 8px 0 0;
+            -webkit-border-radius: 8px 8px 0 0;
+            -moz-border-radius: 8px 8px 0 0;
+            -ms-border-radius: 8px 8px 0 0;
+            -o-border-radius: 8px 8px 0 0;
+        }
+        p{
+            position: absolute;
+            display: none;
+            left: 15px;
+            text-align: left;
+        }
+        .portfolio-square-title{
+            top: 3px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .portfolio-square-description{
+            top: 35px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &::after{
+            content: "";
+            opacity: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: 1;   
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+        }
+        &:hover{
+            &::after{
+            opacity: 0.6;
+            }
+            > p{
+                display: block;
+                opacity: 1;
+                z-index: 3;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* --------------------------------- RESPONSIVE : TABLETTE ( 768px) ------------------------------------- */
+/*--------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px){
+    .show-square{
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__container{
+            flex-basis: 40%;
+        }
+    }
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* ----------------------------- RESPONSIVE : DESKTOP COMPUTER (992px ) ---------------------------------- */
+/*--------------------------------------------------------------------------------------------------------*/
+@media (min-width: 992px){
+    .show-square{
+        &__container{
+            flex-basis: 31%;
+        }
+    }
+}

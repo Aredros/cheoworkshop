@@ -1,0 +1,129 @@
+.specialities{
+    margin: auto;
+    margin-top: 60px;
+    width: clamp(370px, 94%, 1200px);
+    &_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.specialities-card{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    padding: 2% 2% 1%;
+    border-radius: 2% 2% 2% 2%;
+    -webkit-border-radius: 2% 2% 2% 2%;
+    -moz-border-radius: 2% 2% 2% 2%;
+    -ms-border-radius: 2% 2% 2% 2%;
+    -o-border-radius: 2% 2% 2% 2%;
+    &__descriptions{
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2px;
+        .div-speciality{
+            flex-basis: 49%;
+            text-align: center;
+            position: relative;
+            margin-bottom: 30px;
+            svg{
+                margin-top: 20px;
+                color: #EDCC9F;
+            }
+            p{
+                padding: 0px 5px 15px;
+                z-index: 2; 
+            }
+            .frist-title{
+                margin-top: 10px;
+                font-size: 25px;
+                margin-bottom: 5px;
+            }
+            .speciality-paragraph{
+                margin-top: 0px;
+                font-size: 16px;
+            }
+            border-radius: 80px 80px 5px 5px;
+            -webkit-border-radius: 80px 80px 5px 5px;
+            -moz-border-radius: 80px 80px 5px 5px;
+            -ms-border-radius: 80px 80px 5px 5px;
+            -o-border-radius: 80px 80px 5px 5px;
+        }
+    }
+    &__zodiac{
+        position: relative;
+        height: 150px;
+        img{
+            height: 500px;
+            position: absolute;
+            rotate: 270deg;
+            top: -380px;
+            right: -90px;
+        }
+    }
+}
+
+.texture-specialities{
+    background: url("https://i.imgur.com/pyaPxb0.png");
+    height: 100%;
+    border-radius: 80px 80px 5px 5px;
+    -webkit-border-radius: 80px 80px 5px 5px;
+    -moz-border-radius: 80px 80px 5px 5px;
+    -ms-border-radius: 80px 80px 5px 5px;
+    -o-border-radius: 80px 80px 5px 5px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* --------------------------------- RESPONSIVE : TABLETTE ( 768px) ------------------------------------- */
+/*--------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px){
+    .specialities-card{
+        padding: 2% 1% 1%;
+        flex-direction: row;
+        &__descriptions{
+            flex-basis: 71%;
+            .div-speciality{
+                flex-basis: 49%;
+                p{
+                    padding: 0px 7px 15px;
+                }
+            }
+        }
+        &__zodiac{
+            flex-basis: 29%;
+            img{
+                height: 1200px;
+                top: -300px;
+                left: 40px;
+                rotate: 0deg;
+            }
+        }
+    }
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* ----------------------------- RESPONSIVE : DESKTOP COMPUTER (992px ) ---------------------------------- */
+/*--------------------------------------------------------------------------------------------------------*/
+@media (min-width: 992px){
+    .specialities-card{
+        padding: 2% 4% 1%;
+        &__descriptions{
+
+            flex-wrap: nowrap;
+            .div-speciality{
+                flex-basis: 24%;
+                p{
+                    padding: 0px 11px 15px;
+                }
+            }
+        }
+    }
+
+}
