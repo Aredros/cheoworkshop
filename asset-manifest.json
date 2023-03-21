@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/cheoworkshop/static/css/main.a40a8358.css",
+    "main.js": "/cheoworkshop/static/js/main.3925f401.js",
+    "static/js/787.867ef6f8.chunk.js": "/cheoworkshop/static/js/787.867ef6f8.chunk.js",
+    "static/media/zodiac2.png": "/cheoworkshop/static/media/zodiac2.59bd917b0fea7d9e3fb3.png",
+    "static/media/man-2.png": "/cheoworkshop/static/media/man-2.e6db5955149b90d35d18.png",
+    "static/media/MOULINview.jpg": "/cheoworkshop/static/media/MOULINview.6698f4a8b4d0ccbba668.jpg",
+    "static/media/headMucha1.png": "/cheoworkshop/static/media/headMucha1.10e85541bd2ecedcf5f4.png",
+    "static/media/TPTFview.jpg": "/cheoworkshop/static/media/TPTFview.f7de6061150058f27d69.jpg",
+    "static/media/GITHUBview.jpg": "/cheoworkshop/static/media/GITHUBview.a4cc3856c7af2ff41715.jpg",
+    "index.html": "/cheoworkshop/index.html",
+    "main.a40a8358.css.map": "/cheoworkshop/static/css/main.a40a8358.css.map",
+    "main.3925f401.js.map": "/cheoworkshop/static/js/main.3925f401.js.map",
+    "787.867ef6f8.chunk.js.map": "/cheoworkshop/static/js/787.867ef6f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a40a8358.css",
+    "static/js/main.3925f401.js"
+  ]
+}
