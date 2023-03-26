@@ -5,13 +5,17 @@ function Overheader({lightmode, modeButtonHandler}){
         handler();
       };
 
+function getOpacityClass(lightmode, themeNames) {
+  return themeNames === lightmode ? "opacity-on" : "opacity-off";
+      }
+
     return(
         <div className="overheader">
             <div className="container">
                 <div>
                 {modeButtonHandler.map((buttonHandler) => (
                 <button
-                    className={`overheader-button overheader-button--${buttonHandler.name}`}
+                    className={`overheader-button overheader-button--${buttonHandler.name} ${getOpacityClass(lightmode, buttonHandler.name)}`}
                     key={buttonHandler.name}
                     onClick={() => handleButtonClick(buttonHandler.handler)}
         >
